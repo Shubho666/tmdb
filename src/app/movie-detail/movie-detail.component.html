@@ -18,14 +18,20 @@
         <button mat-button>SHARE</button>
     </mat-card-actions>
 </mat-card> -->
-
-
-<button (click)=getTrending()>View Trending Movies</button>
-<mat-card *ngFor="let movie of movieTrending.results" >
+<!-- {{getTrending()}} -->
+<!-- <div *ngIf=movieTrending></div>  -->
+{{getTrending()}}
+<!-- <button (click)=getTrending()>View Trending Movies</button>  -->
+<!-- <mat-card *ngFor="let movie of movieTrending" >
  <mat-card-title>{{movie.original_title}}</mat-card-title>
   <mat-card-content>
    <p>
      {{movie.overview}}
    </p>
  </mat-card-content>
+</mat-card> -->
+<div id="cardstyle">
+<mat-card *ngFor="let movie of movieTrending" >
+    <app-card [movie]=movie></app-card>
 </mat-card>
+</div>

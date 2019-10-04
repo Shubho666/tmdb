@@ -7,13 +7,13 @@
   <div class="headeroptions">
       <button mat-menu-item [matMenuTriggerFor]="aboveMenu">Discover</button>
       <mat-menu #aboveMenu="matMenu" >
-        <button mat-menu-item>Movies</button>
+        <button mat-menu-item  routerLink='/moviedetail'>Movies</button>
         <button mat-menu-item>TV Shows</button>
       </mat-menu>
 
       <button mat-menu-item [matMenuTriggerFor]="belowMenu">Movies</button>
       <mat-menu #belowMenu="matMenu" >
-        <button mat-menu-item>Popular</button>
+        <button mat-menu-item routerLink='/populardetail'>Popular</button>
         <button mat-menu-item>Top Rated</button>
         <button mat-menu-item>Upcoming</button>
         <button mat-menu-item>Now Playing</button>
@@ -44,4 +44,4 @@
   <input type="text" placeholder="Search movies, shows or people" style="width: 100rem">
 </mat-toolbar>
 
-<app-movie-detail></app-movie-detail>
+<router-outlet></router-outlet>

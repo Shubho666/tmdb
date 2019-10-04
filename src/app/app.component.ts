@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MovieDetailComponent } from '../app/movie-detail/movie-detail.component';
+import {MovieService} from './movie.service';
 
 
 @Component({
@@ -8,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-app';
+
+  getTrending(){
+    
+  }
   
   
   

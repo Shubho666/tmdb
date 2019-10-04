@@ -14,13 +14,20 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule}  from '@angular/common/http';
+import { PopularComponent } from './popular/popular.component';
+
+import { CardComponent } from './card/card.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     //TitlebarComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    PopularComponent,
+    
+    CardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,9 @@ import {HttpClientModule}  from '@angular/common/http';
     BrowserAnimationsModule,
     MatSliderModule,
     MatToolbarModule,
-    MatFormFieldModule,MatCardModule,HttpClientModule,
+    MatFormFieldModule,
+    MatCardModule,
+    HttpClientModule,
     MatMenuModule
   ],
   providers: [],
