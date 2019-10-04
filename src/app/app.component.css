@@ -1,0 +1,21 @@
+/* button{
+    background: black;
+    color:white;
+    box-shadow: 0ch;
+} */
+
+.headeroptions{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    
+}
+.headeroptions button{
+    width:6rem;
+}
+
+#toolbar2{
+    /*width: 100rem;*/
+    background-color: grey;
+    
+} 
