@@ -2,9 +2,9 @@
 <mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider> -->
 
 <!-- <h1>{{title}}</h1> -->
-<mat-toolbar>
+<mat-toolbar class="fixed-menu1">
   <span>TheMovieDB</span>
-  <div class="headeroptions">
+  <div class="headeroptions" >
       <button mat-menu-item [matMenuTriggerFor]="aboveMenu">Discover</button>
       <mat-menu #aboveMenu="matMenu" >
         <button mat-menu-item  routerLink='/moviedetail'>Movies</button>
@@ -28,7 +28,7 @@
       </mat-menu>
 
 
-      <button mat-menu-item [matMenuTriggerFor]="afterMenu">People</button>
+      <!-- <button mat-menu-item [matMenuTriggerFor]="afterMenu">People</button>
       <mat-menu #afterMenu="matMenu" >
         <button mat-menu-item>Popular People</button>
       </mat-menu>
@@ -36,12 +36,40 @@
       <mat-menu #afterMenu="matMenu" >
         <button mat-menu-item>My Movies</button>
         <button mat-menu-item>My TV Shows</button>
-      </mat-menu>
+      </mat-menu> -->
 
   </div>
 </mat-toolbar>
+<!-- <mat-toolbar id="toolbar2">
+  <form onsubmit="myFunction()">
+  <input type="text" placeholder="Search movies, shows or people" style="width: 80rem">
+  
+    <input type="submit" value="Submit">
+  </form>
+</mat-toolbar>  -->
+<!-- <mat-toolbar>
+<form [formGroup] = "searchForm" >
+    <mat-form-field>
+            <input matInput formControlName="searchInput" id="input">
+    </mat-form-field>
+    <button mat-button id="search_button">
+            <mat-icon aria-hidden="false" aria-label="Example search icon">search</mat-icon>
+    </button> 
+</form>
+</mat-toolbar> -->
+<!-- <app-searchbar  class="fixed-menu2"></app-searchbar>  -->
 <mat-toolbar id="toolbar2">
-  <input type="text" placeholder="Search movies, shows or people" style="width: 100rem">
+  <form [formGroup]="formVar" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Search movies, shows or people" formControlName="searchname" style="width:150%" id="searchitem">
+  
+    <input type="submit" value="Submit">
+    
+  </form>
 </mat-toolbar>
 
+<!-- <form [formGroup]="formVar" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="searchname">
+  <button type="submit">Submit</button>
+</form> -->
+ <!-- <app-searchbar  ></app-searchbar>   -->
 <router-outlet></router-outlet>

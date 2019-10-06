@@ -3,6 +3,9 @@
     color:white;
     box-shadow: 0ch;
 } */
+/* html,body {
+    width:95%;
+} */
 
 .headeroptions{
     display: flex;
@@ -19,6 +22,19 @@
     background-color: grey;
     
 } 
+.fixed-menu1{
+    position: sticky;
+    top: 0;
+    z-index:1;
+    
+    
+
+}
+
+#top-tool-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* .example-card{
     max-width:300px;
     display: inline-block;

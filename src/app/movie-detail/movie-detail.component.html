@@ -1,5 +1,5 @@
-<p>movie-detail works!</p>
-<!-- <mat-card class="example-card">
+<!--<p>movie-detail works!</p>
+<mat-card class="example-card">
     <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>Shiba Inu</mat-card-title>
@@ -20,7 +20,7 @@
 </mat-card> -->
 <!-- {{getTrending()}} -->
 <!-- <div *ngIf=movieTrending></div>  -->
-{{getTrending()}}
+<!-- {{getTrending()}} -->
 <!-- <button (click)=getTrending()>View Trending Movies</button>  -->
 <!-- <mat-card *ngFor="let movie of movieTrending" >
  <mat-card-title>{{movie.original_title}}</mat-card-title>
@@ -30,8 +30,8 @@
    </p>
  </mat-card-content>
 </mat-card> -->
-<div id="cardstyle">
-<mat-card *ngFor="let movie of movieTrending" >
+<div id="cardStyle">
+<div *ngFor="let movie of movieTrending" >
     <app-card [movie]=movie></app-card>
-</mat-card>
+</div>
 </div>

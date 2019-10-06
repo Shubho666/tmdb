@@ -13,12 +13,12 @@ export class MovieDetailComponent implements OnInit {
   movieTrending;
   constructor(private movieService:MovieService){}
   ngOnInit(){
-    //this.getTrending();
+    this.getTrending();
   }
 
 
   getTrending():void{
-    console.log('working');
+    console.log('movie-detail');
     this.movieService.getTrending().subscribe(movie => this.movieTrending=movie.results);
   }
 

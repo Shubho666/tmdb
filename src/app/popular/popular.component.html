@@ -1,1 +1,7 @@
-<p>popular works!</p>
+<!-- <p>popular works!</p>
+{{getPopular()}} -->
+<div id="cardStyle">
+<div *ngFor="let movie of moviePopular" >
+    <app-card [movie]=movie></app-card>
+</div>
+</div>

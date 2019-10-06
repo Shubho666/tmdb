@@ -1,0 +1,15 @@
+<!-- <p>searchbar works!</p> -->
+<!-- <mat-toolbar id="toolbar2">
+        <form (ngSubmit)="getSearch()">
+        <input type="text" placeholder="Search movies, shows or people" style="width:150%" id="searchitem">
+        
+          <input routerLink='/search' type="submit" value="Submit">
+          
+        </form>
+      </mat-toolbar> -->
+
+<div id="cardStyle">
+    <div *ngFor="let movie of movieSearch" >
+        <app-card [movie]=movie></app-card>
+    </div>
+</div>

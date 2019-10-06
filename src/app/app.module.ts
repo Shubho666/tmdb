@@ -1,23 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 import { MatSliderModule } from '@angular/material/slider';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
-//import { TitlebarComponent } from './titlebar/titlebar.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule}  from '@angular/common/http';
+
+import { AppComponent } from './app.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { PopularComponent } from './popular/popular.component';
-
 import { CardComponent } from './card/card.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
+
+import {ReactiveFormsModule} from '@angular/forms';
+
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -27,10 +34,13 @@ import { CardComponent } from './card/card.component';
     MovieDetailComponent,
     PopularComponent,
     
-    CardComponent
+    CardComponent,
+    
+    SearchbarComponent
   ],
   imports: [
     BrowserModule,
+    
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
@@ -38,10 +48,11 @@ import { CardComponent } from './card/card.component';
     MatFormFieldModule,
     MatCardModule,
     HttpClientModule,
+    ReactiveFormsModule,MatButtonModule,FormsModule,
     MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+}) 
 export class AppModule { }
 
