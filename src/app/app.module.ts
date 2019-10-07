@@ -25,6 +25,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule} from '@angular/forms';
+import { MovieDescriptionComponent } from './movie-description/movie-description.component';
 
 
 @NgModule({
@@ -36,7 +37,9 @@ import {FormsModule} from '@angular/forms';
     
     CardComponent,
     
-    SearchbarComponent
+    SearchbarComponent,
+    
+    MovieDescriptionComponent
   ],
   imports: [
     BrowserModule,

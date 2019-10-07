@@ -3,7 +3,7 @@
 
 <!-- <h1>{{title}}</h1> -->
 <mat-toolbar class="fixed-menu1">
-  <span>TheMovieDB</span>
+  <span id="logo">TheMovieDB</span>
   <div class="headeroptions" >
       <button mat-menu-item [matMenuTriggerFor]="aboveMenu">Discover</button>
       <mat-menu #aboveMenu="matMenu" >
@@ -60,7 +60,7 @@
 <!-- <app-searchbar  class="fixed-menu2"></app-searchbar>  -->
 <mat-toolbar id="toolbar2">
   <form [formGroup]="formVar" (ngSubmit)="onSubmit()">
-  <input type="text" placeholder="Search movies, shows or people" formControlName="searchname" style="width:150%" id="searchitem">
+  <input type="text" placeholder="Search movies, shows or people" formControlName="searchname" id="searchitem">
   
     <input type="submit" value="Submit">
     

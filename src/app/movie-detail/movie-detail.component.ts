@@ -18,8 +18,9 @@ export class MovieDetailComponent implements OnInit {
 
 
   getTrending():void{
-    console.log('movie-detail');
+    //console.log('movie-detail');
     this.movieService.getTrending().subscribe(movie => this.movieTrending=movie.results);
   }
+  
 
 }
